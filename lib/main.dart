@@ -1,3 +1,4 @@
+import 'package:ardemo/camera_demo.dart';
 import 'package:flutter/material.dart';
 import './demo_page.dart';
 void main() {
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: CameraDemo(),
     );
   }
 }

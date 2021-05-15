@@ -2,6 +2,7 @@ import 'package:arkit_plugin/widget/arkit_scene_view.dart';
 import 'package:flutter/material.dart';
 import 'package:arkit_plugin/arkit_plugin.dart';
 import 'package:vector_math/vector_math_64.dart';
+import 'camera_demo.dart';
 
 class DemoPage extends StatelessWidget {
   const DemoPage({Key key}) : super(key: key);
@@ -10,7 +11,8 @@ class DemoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Demo')),
-      body: ARKitSceneView(onARKitViewCreated: (e) => onARKitViewCreated(e),),
+      // body: ARKitSceneView(onARKitViewCreated: (e) => onARKitViewCreated(e),),
+      body: CameraDemo(),
     );
   }
 
